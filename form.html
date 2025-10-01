@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы. Отправляем данные на сервер</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<html>
+<body>
+<h3 align="center">Формы. Отправляем данные на сервер</h3>
+<!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+<!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+<form action="https://www.ya.ru" id="UserEnter" name="UserEnter" target="_blank">
+    
+    <fieldset>
+        <legend>Контактная информация</legend>
+    <p>Имя: <input type="Text" name="last_name" size=20  value="Петр"></p>
+    <p>Телефон: <input type="tel" name="phone" size=20 value="89056787634"></p>
+    <p>Email: <input type="email" name="email" size=20 value="123@gmail.com"></p>
+    <p>Дата посещения: <input type="date" name="date" size=20 value="12.08.2025"></p>
+    <button type="Submit" name="submit"  value="Отправить">Отправить</button>
+
+    </fieldset>
+</form>
+
+<form action="https://www.ya.ru" id="UserEnter" name="UserEnter" target="_blank">
+<fieldset>
+        <legend>Персональная информация</legend>
+    <p>Возраст <input type="Number" name="age"  min="0" max="100"></p>
+    <p>Любимая кухня
+        <select name="food">
+            <OPTION value="русская">Русская</OPTION>
+            <OPTION value="italy">Итальянская</OPTION>
+            <OPTION value="chinese">Китайская</OPTION>
+        </select>
+    <p>Какие блюда Вы хотели бы увидеть в меню? <TEXTAREA cols=80 rows=4 name="textarea" ></TEXTAREA></p>
+    </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Оценка нашего заведения</legend>
+    <p>Почему Вы выбрали наше заведение?
+        <input type="Checkbox" name="mark" value="work" checked> Недалеко от дома/работы
+        <input type="Checkbox"  name="mark" value="rekl" checked>Увидел рекламу
+        <input type="Checkbox" name="mark" value="friends" checked>Посоветовали
+        <input type="Checkbox" name="mark" value="optim" checked>Оптимальное соотношение цены и качества
+    </p>
+    <p>Вы будете рекомендовать наше заведение своим знакомым?
+        <input type="Radio" name="mark" value="yes" checked> Да
+        <input type="Radio"  name="mark" value="no" checked> Нет
+    </p>
+    <button type="Submit" name="submit"  value="Отправить">Отправить</button>
+    </fieldset>
+    
+</form>
