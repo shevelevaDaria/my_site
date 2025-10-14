@@ -1,0 +1,30 @@
+figure {
+    border: 10px dackred solid;
+    display: flex; flex-flow: column;
+    padding: 5px; max-width: 420px;
+    margin: auto;
+    img {
+    max-width: 420px; max-height: 350px;
+    }
+    figcaption{
+    background-color: #cb626e; color: red;
+    font: italic smaller sans-serif;
+    padding: 30px;
+    text-align: center;
+    }
+}
+.markers {
+  margin: 20px 0px 0px 0px;
+  padding: 0;
+}
+.markers li {
+  display: block;
+  margin: 10px 10px;
+  background: url('greenChek.jpg') left /5% no-repeat;
+  padding-left: 100px;
+  font-size: 14px;
+}
+
+ul{
+    list-style-image: url('greenChek.jpg')
+}

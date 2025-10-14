@@ -1,0 +1,40 @@
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 300px;
+  margin: auto;
+}
+
+
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+table,th {
+        background-color: grey;
+        width: 600;
+        padding: 10px;
+        border-spacing: 15px;
+        border: 2px solid red;
+
+}
+td{
+  border: 2px solid red;
+  padding:20px 20px 20px 20px;
+}
+table{
+  margin: auto;
+  background: url(fon2.jpg);
+  border-collapse: collapse;
+  border-color: 2px solid red;
+}
+table, th, td{
+  border-color: 2px solid red;
+}

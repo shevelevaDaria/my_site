@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Формы. Отправляем данные на сервер</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>aidadance</title>
     <link rel="stylesheet" href="form.css">
-</head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yHsDzL9SNxBpSc0B7IWFbg_03706qPm65AF8OFT52OA0BKHpwnfRPkcOYGrvzgTB3dZymqa3_bu33EHXXEQ39Qt7pQRt06-Sd3bxpiNv5CZdSMPEM0JEAULoF5qJ4dFHzewWQxebToUDWEFhGWEz5MkP4kujHN0ozRSrGwj18KcnSKlZ4D_ZHFMToU69kQmIjQPvjZ0UuZYqTWfJr21wIK9hk3Iiol0_yRhb4-LqfcSSNl3wODEqXMWJJE1pCENsJZEkGWMXM9w6M9xWcYU66IfQwRbNIppbOdeprK0sDc8" charset="UTF-8"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
 
-<html>
-<body>
-<h3 align="center">Формы. Отправляем данные на сервер</h3>
-<!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
-<!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
-<form action="https://www.ya.ru" id="UserEnter" name="UserEnter" target="_blank">
+<div class="container">
+   <header class="card">
+        <div class="card-body">
+            <h5 class="card-title">aidadance</h5>
+        </div>
+    </header>
+ <div class="card ">
+
+   <navigation class="card-header">
+<ul class="nav nav-tabs card-header-tabs">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="index.html">Главная страница</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="form.html"> Форма для индивидуального заказа</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="dz.html">Таблица для удобного подбора танцевальных туфель</a>
+  </li>
+
+  </ul>
+
+</navigation>
+
+<h3 align="center">Индивидуальный заказ</h3>
+
+<form action="https://www.ya.ru" id="UserEnter" name="UserEnter" target="_self">
     
     <fieldset>
         <legend>Контактная информация</legend>
@@ -28,29 +53,49 @@
 <fieldset>
         <legend>Персональная информация</legend>
     <p>Возраст <input type="Number" name="age"  min="0" max="100"></p>
-    <p>Любимая кухня
+    <p>Программа танцев
         <select name="food">
-            <OPTION value="русская">Русская</OPTION>
-            <OPTION value="italy">Итальянская</OPTION>
-            <OPTION value="chinese">Китайская</OPTION>
+            <OPTION value="latina">Латина</OPTION>
+            <OPTION value="standart">Стандарт</OPTION>
+            <OPTION value="kid">Детская</OPTION>
         </select>
-    <p>Какие блюда Вы хотели бы увидеть в меню? <TEXTAREA cols=80 rows=4 name="textarea" ></TEXTAREA></p>
+    <p>Дополнительные комментарии к заявке(размер,желаемая модель) <TEXTAREA cols=80 rows=4 name="textarea" ></TEXTAREA></p>
     </p>
     </fieldset>
 
     <fieldset>
-        <legend>Оценка нашего заведения</legend>
-    <p>Почему Вы выбрали наше заведение?
-        <input type="Checkbox" name="mark" value="work" checked> Недалеко от дома/работы
+        <legend>Оценка нашего магазина</legend>
+    <p>Почему Вы выбрали наш магазин?
+        <input type="Checkbox" name="mark" value="trener" checked> Посоветовал тренер
         <input type="Checkbox"  name="mark" value="rekl" checked>Увидел рекламу
-        <input type="Checkbox" name="mark" value="friends" checked>Посоветовали
+        <input type="Checkbox" name="mark" value="friends" checked>Посоветовали друзья
         <input type="Checkbox" name="mark" value="optim" checked>Оптимальное соотношение цены и качества
     </p>
-    <p>Вы будете рекомендовать наше заведение своим знакомым?
-        <input type="Radio" name="mark" value="yes" checked> Да
-        <input type="Radio"  name="mark" value="no" checked> Нет
+    <p>Как часто вы посещаете наш магазин
+        <input type="Radio" name="mark" value="yes" checked> В первый раз
+        <input type="Radio"  name="mark" value="no" checked> Постоянный клиент
+        
     </p>
     <button type="Submit" name="submit"  value="Отправить">Отправить</button>
     </fieldset>
     
 </form>
+<footer class="card">
+        <div class="card-body">
+            <p class="card-text">
+              <table>
+                <tr>
+                  <td>Профессиональная танцевальная обувь для тех, кто движется к совершенству.<br> Мы помогаем танцорам раскрыть свой потенциал с помощью комфорта, качества и стиля.<br>С любовью к танцу, команда Aidadance.</td>
+                  <td>Контакты:<br>
+☎️ +7 (XXX) XXX-XX-XX<br>
+✉️ info@aidadance.ru<br>
+🏠 г. Москва, ул. Танцорова, 5 (м. Ритм)<br>
+</td>
+
+  </tr>
+  </table>
+</p>
+        </div>
+    </footer>
+   </body>
+</html>
